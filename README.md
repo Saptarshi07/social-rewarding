@@ -1,5 +1,8 @@
-# social-rewarding
-For the manuscript "Reputation effects facilitate the joint evolution of cooperation and social rewarding"
+## social rewarding
+
+### Content: 
+
+For the manuscript "Reputation effects drive the joint evolution of cooperation and social rewarding"
 
 The repository contains the python scripts for generating the results from the model in the manuscript and contains data for the figures
 
@@ -24,4 +27,55 @@ In the folder /public-goods-game there are three python scripts:
   - fixation-prob-to-stationarydist.py computes the stationary distribution of the strategies at the low mutation regime of the evolutionary
  dynamics for the public goods game. The file requires an input of the fixation probabilities which it reads from /input-files. The output is written at public-goods-game/output-files/
  
- The data for the figures can be found as data-figures.zip
+### Data for the figures:
+
+    - The data for the figures can be found in the zipped folder data-figures.zip
+ 
+### Prerequisites for running the scripts: 
+
+    - All the python scripts run for version 3.6 and above. The user only needs to install the package - pandas.
+    Installation of pandas can be done with the python package installer pip through command line - 
+    
+        pip install pandas
+    
+    - Details about the package installer pip can be found in this link: https://pypi.org/project/pip/
+    
+### Example output of python scripts: 
+
+    - Example outputs of the python scripts can be found in the folder: /output-files/
+    
+    For the two-player case the example outputs include: 
+    
+    a) evolutionary time series of strategies for two-player interactions in the population for assortment and no assortment.
+        the other parameters of the example simulation for 10 time steps can be found in the output csv files.
+    b) the stationary distribution of strategies in the population (with assortment) at low mutation for the parameter values:
+        information transmissibility = 0.5 and degree of assortment = 0.5 and selection strength = 1.
+    
+    The example files are: 
+    
+    two-player/output-files/example-assortment-timeseries.csv
+    two-player/output-files/example-time-series-two-player.csv
+    two-player/output-files/example-assortment-stationarydist.csv
+    
+    For the public-goods-game case the example outputs include:
+    
+    a) evolutionary time series of strategies for multiplayer public goods interactions (group size = 4). 
+        the other parameters of the example simulation for 10 time steps can be found in the output csv files.       
+    b) fixation probability of a mutant strategy in a population of resident strategy.
+        only the example of fixation probability of mutant (C,SR) invading a population of (C,NR) is shown.
+    c) the stationary distribution of strategies in the population at low mutation for the parameter values:
+        information transmissibility = 0.5 and reward value = 0.16 and selection strength = 1.
+    
+    
+    The example files are: 
+    
+    public-goods-game/output-files/example-pgg-timeseries.csv
+    public-goods-game/output-files/example-pgg-fixation.csv
+    public-goods-game/output-files/example-stationary_dist.csv
+    
+    
+
+    
+
+ 
+ 
