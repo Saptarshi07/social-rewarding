@@ -125,13 +125,13 @@ data = [['lmd', 'r', 's'] + [str(k) for k in range(0,16)]]
 
 #note that r=0 gives stationary distribution for the well mixed population
 
-#the following computes the stationary distribuion for 441 parameter combination of r and lambda -  both ranging from 0 to 1
-#this may take some time to compute. To try out for lesser values change the variable range_ below from 21 to less
+#the following computes the stationary distribuion for 441 (21*21) parameter combination of r and lambda -  both ranging from 0 to 1
+#for computing stationary distribution for specific values of information transmissibility(lmd) and assortment (r) change the for loop iterations. For example: for lmd in [0.5]: for r in [0.5] would return only the stationary distribution for one parameter combination where lmd = 0.5 and r = 0.5
 
-range_ = 21
-
-for lmd in np.linspace(0,1,range_):
-    for r in np.linspace(0,1,range_):
+for lmd in np.linspace(0,1,21):
+#for lmd in [0.5]:
+#    for r in [0.5]:
+    for r in np.linspace(0,1,21):
         STM = get_STM(lmd,r,s)
         D, V = np.linalg.eig(STM.T)
         near1_idx = min(D, key=lambda x:abs(x-1))
