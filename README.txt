@@ -55,6 +55,9 @@
     b) the stationary distribution of strategies in the population (with assortment) at low mutation for the parameter values:
         information transmissibility = 0.5 and degree of assortment = 0.5 and selection strength = 1.
     
+    For a sample time series output for 10 steps, the code requires not more than 2 minutes to generate the result in a normal desktop computer. 
+    For computing stationary distribution of strategies for a single parameter combination, the code requires not more than 2 minutes in the same. 
+    
     The example files are: 
     
     two-player/output-files/example-assortment-timeseries.csv
@@ -70,6 +73,8 @@
     c) the stationary distribution of strategies in the population at low mutation for the parameter values:
         information transmissibility = 0.5 and reward value = 0.16 and selection strength = 1.
     
+    For a sample time series output for 10 steps, the code requires not more than 2 minutes to generate the result in a normal desktop computer. 
+    For computing stationary distribution of strategies for a single parameter combination, the code requires not more than 2 minutes in the same. 
     
     The example files are: 
     
